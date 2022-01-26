@@ -64,8 +64,11 @@ section{
     /* margin-bottom: 3rem; */
     padding-top:3rem ;
     padding-bottom: 5rem;
-    border-bottom: black solid 5px;
+    /* border-bottom: black solid 5px; */
     
+}
+.bg-grey{
+    background-color: #F9FAFB;
 }
 .sidebar{
     padding-inline: 1rem 2rem;
@@ -73,9 +76,13 @@ section{
 .Row{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     /* flex-wrap: wrap; */
+}
+#statics{
+    justify-content: space-evenly;
+    gap: 1rem;
 }
 .Column{
     display: flex;
@@ -84,7 +91,7 @@ section{
 }
 .Button{
     border: none;
-    padding: 1rem;
+    padding: .8rem;
     border-radius: 6px;
     text-align: center;
     font-size: medium;
@@ -103,6 +110,9 @@ section{
 }
 .shadowText{
     color: rgba(0, 0, 0, 0.68);
+}
+.sidebar{
+    width: 42%;
 }
 .sidebar h1{
     font-weight: bold;
@@ -140,6 +150,9 @@ section{
     color: #22B8CF;
     font-size:38px;
 }
+.showImg{
+    width: 63%;
+}
 
 
 /* partTwo */
@@ -171,16 +184,17 @@ section{
 }
 .Card{
     margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
-    /* width: clamp(20rem, calc(20rem + 2vw), 22rem); */
     overflow: hidden;
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1em;
-    /* background: #ECE9E6; */
-    /* background: linear-gradient(to right, #FFFFFF, #ECE9E6); */
     /* width: 32.5%; */
   
+}
+.CardHead{
+    padding: 0;
 }
 .CardBody {
     padding: 1rem;
@@ -208,7 +222,7 @@ section{
     font-weight: bold;
     color: rgba(0, 0, 0, 0.68);
   }
-  .CardBody>h3 {
+  .CardBody>h3 , .textColumn>h1 , .RCardBody>h2{
     font-family:'Barlow Condensed', sans-serif;
   }
   .CardText{
@@ -216,9 +230,10 @@ section{
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
+      flex-wrap: wrap;
 
   }
-  .CardText div:nth-of-type(2)>span:nth-of-type(2)>p{
+  .CardText div:nth-of-type(2)>span:nth-of-type(2)>p , .RCardBody>p{
       font-family: 'Poppins', sans-serif  ;
   }
   .item{
@@ -270,24 +285,103 @@ section{
         color: rgba(0, 0, 0, 0.68);
     }
 
+    #FeaturedCategory{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+    }
 
     .FeaturedCategory{
-        margin-right: 1.5rem;
+        width: 30%;
+        /* margin-right: 1.5rem; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        flex: 2;
         gap: 1rem;
-
-
     }
+    
     .Categories{
-        
+        width:70%;
+        display: flex;
+        flex-wrap: wrap;
+        gap:1rem;
     }
     .Cat{
         padding: 1rem;
         border: 1px solid rgba(145, 158, 171, 0.24);;
         border-radius: 12px;
         box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+
+    #Teachers{
+        gap: 1rem;
+    }
+    .textColumn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        
+    }
+    .ReverseCard{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        /* justify-content: center; */
+        align-items: center;
+        overflow: hidden;
+        box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+        border-radius: 1rem;
+        /* width: 32.5%; */
+    }
+    .RCardHead img{
+        margin: 0;
+        padding: 0;
+    }
+    .RCardBody{
+        margin: 0;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+    .Rbutton{
+        margin: auto;
+    }
+
+
+    .newsLetter{
+        background-color: #FFF1ED;
+        border-radius: 24px;
+        padding: 2rem;
+        justify-content: space-evenly;
+    }
+    .newsLetter div:nth-of-type(1){
+        width: 470px;
+        gap: 1.7rem;
+    }
+    .newsLetter input{
+        padding: 1rem;
+        width:75%;
+        border: none;
+        border-radius: 8px;
+        /* font-size: 24px; */
+    }
+    .relative{
+        position: relative;
+    }
+    .relative input{
+        position: relative;
+        
+    }
+    .relative button{
+        width: 25%;
+        position: absolute;
+        right: 0;
+        margin-right: 5px;
     }
