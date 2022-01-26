@@ -14,9 +14,30 @@
         <!--Header-Navbar-->
         <header>
             <div class="Container">
-                <h1>ZONE<span>.</span></h1>
+                <a href="#"><h1>ZONE<span>.</span></h1></a>
                 
-                <div class="Row" id="navmenu">
+                <nav>
+                    <ul class="Menu">
+                        <li class="menuItem"><a href="#">Home</a></li>
+                        <li class="menuItem"><a href="#">Components</a></li>
+                        <li class="menuItem"><a href="#">Pages</a></li>
+                        <li class="menuItem"><a href="#">Documentation</a></li>
+                      </ul>
+                </nav>
+                <button class="Button hamburger ButtonNone" type="checkbox" id="menu-btn" >
+                    <i class="bi bi-list"></i>
+                </button>
+                <div>
+                    <a href="#"><i class="bi bi-search text-dark"></i></a>
+                    <a href="#"><i class="bi bi-globe text-dark"></i></a>
+                    <span class="text-black-50">|</span>
+                    <a href="#" class="text-dark mx-3 text-decoration-none">Login</a>
+                    <button class="Button ButtonBlack">Join us</button>
+                </div>
+                <!-- <div class="Row" id="navmenu">
+                    <button class="Button ButtonNone Hamburger">
+                        <i class="bi bi-list"></i>
+                    </button>
                     <nav class="navigation">
                         <ul>
                             <li>Home</li>
@@ -32,7 +53,7 @@
                         <a href="#" class="text-dark mx-3 text-decoration-none">Login</a>
                         <button class="Button ButtonBlack">Join us</button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </header>
 
@@ -402,7 +423,7 @@
                 <h1>ZONE<span>.</span></h1>
             </div>
             <div class="Row Footer">
-                <div class="description">
+                <div class="Column description">
                     <p class="shadowText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores minus magni repudiandae harum obcaecati itaque aliquid veniam aspernatur nobis deleniti?</p>
                     <div class="Row">
                         <a href="#"><i class="bi bi-twitter"></i></a>
@@ -411,13 +432,13 @@
                         <a href="#"><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
-                <div class="contact">
+                <div class="Column contact">
                     <ul>
                         <li><i class="bi bi-envelope"></i> info@example.com</li>
                         <li><i class="bi bi-geo-alt"></i> 656 schaefer Dale</li>
                     </ul>
                 </div>
-                <div class="Email">
+                <div class="Column Email">
                     <input type="text" class="input" placeholder="Enter Email">
                     <button class="Button ButtonOrange"><i class="bi bi-chevron-right"></i></button>
                 </div>
@@ -434,6 +455,6 @@
         </div>
     </footer>
         
-        <script src="" async defer></script>
+        <script src="./script.js" async defer></script>
     </body>
 </html>

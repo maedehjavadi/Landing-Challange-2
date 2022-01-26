@@ -31,6 +31,28 @@ body{
     }
 }
 @media(max-width: 1000px){
+    .Menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    
+    .menuiItem {
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display:block;
+        cursor: pointer;
+    }
+
     .Brands{
         display: flex;
         flex-direction: row;
@@ -113,22 +135,41 @@ header h1 span ,footer h1 span {
 header ul{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 
 }
 header li{
     text-decoration: none;
     color: #637381;
-    display: inline;
     padding-inline: 20px;
 }
-
-.navigation{
+header li a{
+    display: block;
+}
+header nav {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    padding: 1rem 1.5rem;
+}
+.Menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* header li a:hover,
+header .hamburger:hover{
+    background-color: rgba(0, 0, 0, 0.02);
+} */
+.hamburger{
+    /* display:none; */
     
 }
+.hamburger i{
+    font-weight: bolder;
+    font-size: 22px;
+}
+
 li , a , button{
     text-decoration: none;
     list-style: none;
