@@ -47,7 +47,7 @@
                             <a href="#">Watch Video</a>
                         </div>
                     </div>
-                    <div class="Row">
+                    <div class="Row" id="statics">
                         <div class="Column">
                            <span>14K+</span>
                            <p class="shadowText">Learners</p> 
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="image">
+                <div class="showImg">
                     <img src="./img/01.png" alt="">
                 </div>
             </div>
@@ -125,7 +125,7 @@
                 <div class="Row" id="cards">
                     <div class="Card">
                         <div class="CardHead">
-                            <img src="./img/1.png" alt="">
+                            <img class="responsiveImage" src="./img/1.png" alt="">
                         </div>
                         
                         <div class="CardBody">
@@ -150,7 +150,7 @@
                                 <span><p class="text-center">Bessie Cooper</p></span>
                             </div>
                             <div>
-                                <img src="./img/layer.svg" alt="" class="img-fluid">
+                                <img src="./img/layer.svg" alt="">
                             </div>
                             
                         </div>
@@ -167,7 +167,7 @@
                     </div>
                     <div class="Card">
                         <div class="CardHead">
-                            <img src="./img/1.png" alt="">
+                            <img class="responsiveImage" src="./img/1.png" alt="">
                         </div>
                         
                         <div class="CardBody">
@@ -192,7 +192,7 @@
                                 <span><p class="text-center">Bessie Cooper</p></span>
                             </div>
                             <div>
-                                <img src="./img/layer.svg" alt="" class="img-fluid">
+                                <img src="./img/layer.svg" alt="">
                             </div>
                             
                         </div>
@@ -209,7 +209,7 @@
                     </div>
                     <div class="Card">
                         <div class="CardHead">
-                            <img src="./img/1.png" alt="">
+                            <img class="responsiveImage" src="./img/1.png" alt="">
                         </div>
                         
                         <div class="CardBody">
@@ -253,9 +253,9 @@
             </div>
         </section>
 
-        <section>
+        <section class="bg-grey">
             <div class="container">
-                <div class="Row">
+                <div class="Row" id="FeaturedCategory">
                     <div class="FeaturedCategory">
                         <h1>Featured Category</h1>
                         <p class="shadowText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci nesciunt facere doloribus?</p>
@@ -315,45 +315,86 @@
 
 
         <section>
-            
+            <div class="container Column">
+                <div class="textColumn">
+                    <h1>Meet Our Teachers</h1>
+                    <p class="shadowText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta?</p>
+                </div>
+                <div class="Row" id="Teachers">
+                    <div class="ReverseCard">
+                        <div class="RCardHead">
+                            <img src="./img/T-1.png" alt="" class="responsiveImage">
+                        </div>
+                        <div class="RCardBody">
+                            
+                                <h2>Eleanor Pena</h2>
+                                <p class="shadowText">UI Designer</p>
+                            
+                        </div>
+                    </div>
+                    <div class="ReverseCard">
+                        <div class="RCardHead">
+                            <img src="./img/T-2.png" alt="" class="responsiveImage">
+                        </div>
+                        <div class="RCardBody">
+                            
+                                <h2>Esther Howard</h2>
+                                <p class="shadowText">Project Manager</p>
+                            
+                        </div>
+                    </div>
+                    <div class="ReverseCard">
+                        <div class="RCardHead">
+                            <img src="./img/T-3.png" alt="" class="responsiveImage">
+                        </div>
+                        <div class="RCardBody">
+                            
+                                <h2>Dianne Russell</h2>
+                                <p class="shadowText">Leader</p>
+                            
+                        </div>
+                    </div>
+                    <div class="ReverseCard">
+                        <div class="RCardHead">
+                            <img src="./img/T-4.png" alt="" class="responsiveImage">
+                        </div>
+                        <div class="RCardBody">
+                            
+                                <h2>Katheyn Murphy</h2>
+                                <p class="shadowText">Hr Manager</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="Row Rbutton">
+                    <button class="Button ButtonNone" style="border: 2px solid rgba(0,0,0,.68);">View All Teachers</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-grey">
+
+        </section>
+
+        <section>
+            <div class="container Row newsLetter">
+                <div class="Column">
+                    <h1>Lorem ipsum dolor sitamet consectetur adipisicing.</h1>
+                    <p class="shadowText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde eveniet quaerat libero laboriosam hic. Odio.</p>
+                    <div class="Row relative">
+                        <input type="text" class="input" placeholder="Enter Email">
+                        <button class="Button ButtonOrange">Register</button>
+                    </div>
+                </div>
+                <div class="Column">
+                    <img src="./img/Asset 1 2.svg" alt="">
+                </div>
+            </div>
         </section>
 
         <!-- Footer -->
     <footer>
-        <div class="container">
-            <div >
-                <a href="#">ZONE<span style="color: orangered;">.</span></a>
-            </div>
-            <div >
-                <div>
-                    <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ex doloribus.</p>
-                </div>
-                <div>
-                    <ul>
-                        
-                        <li><i class="bi bi-envelope"></i> info@example.com</li>
-                        <li><i class="bi bi-geo-alt"></i> 656 schaefer Dale</li>
-                    </ul>
-                </div>
-                <div>
-                    <input type="text" class="border-0" placeholder="Email Address">
-                    <button class="btn btn-warning text-white" type="button" id="button-addon2" style="border-radius: 5px;">Button</button>
-                </div>
-            </div>
-            <div>
-                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                <a href=""><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href=""><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                <a href=""><i class="bi bi-instagram text-dark mx-1"></i></a>
-            </div>
-            <div>
-                <p>Copyright &copy; All right reserved</p>
-                <div>
-                    <p>Help Center</p>
-                    <p>Terms of Service</p>
-                </div>
-            </div>
-        </div>
+        
     </footer>
         
         <script src="" async defer></script>
