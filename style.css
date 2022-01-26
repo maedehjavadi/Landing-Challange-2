@@ -9,11 +9,27 @@
 
 }
 @media (max-width: 1023px){
-
+    .sideText div:nth-of-type(2){
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
 }
 @media(max-width: 1000px){
-
+    .Brands{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .brand{
+        flex: 2;
+    }
     .showImg{
+        display: none;
+    }
+    .imgPart{
         display: none;
     }
 }
@@ -188,7 +204,7 @@ section{
     font-size:38px;
 }
 .showImg{
-    width: 68%;
+    width: 75%;
 }
 .showImg img{
     width: 95%;
@@ -207,7 +223,14 @@ section{
 
 /* PartThree */
 .imgPart{
-    margin-right:3rem;
+    margin-right:2rem;
+    width: 45%;
+}
+.imgPart img{
+    width: 100%;
+}
+.sideText{
+    width: 65%;
 }
 .sideText> div{
     padding-bottom: 3rem;
