@@ -58,6 +58,10 @@
     .newsLetter div:nth-of-type(2){
         display: none;
     }
+    #Teachers{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 @media (max-width: 675px){
     .Cat{
